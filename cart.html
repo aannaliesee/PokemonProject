@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon API</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <header></header>
+    
+    <div>
+        <a id="home" href="index.html">Choose Pokemon</a>
+    </div>
+    <main>
+
+
+    
+      <h2>Current Team</h2>
+    <div id="cart"></div>
+
+<div>
+      <form id="pokemonForm">
+        <fieldset>
+          <div class="cartlabel">
+            <label for="fname">First Name</label>
+            <input minlength="3" maxlength="20" type="text"name="fname" required/>
+            <label for="lname">Last Name</label>
+            <input minlength="3" name="lname" type="text" required/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Selected Team</legend>
+          <div id="selectedPokemonList"></div>
+        </fieldset>
+        <fieldset>
+        <label for="question">What makes your Pokemon team strong?</label>
+        <textarea type="textarea" id="question" name="question"></textarea><br>
+      </fieldset>
+        <fieldset >
+          <legend>Would you like to join a Pokemon club?</legend>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="yes" value="yes" >
+          <label for="no">No</label>
+          <input type="radio" id="no" name="no" value="no" >
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer></footer>
+  </main>
+
+
+  <script src="main.js"></script>
+    <script src="templates/templates.js"></script>
+    <script src="cart.js"></script>
+    
+
+
+  </body>
+</html>
